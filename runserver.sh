@@ -1,6 +1,6 @@
 chmod +x ./runserver.sh
 chmod +x './xRC Simulator.x86_64'
-nohup './xRC Simulator.x86_64' \
+'./xRC Simulator.x86_64' \
 	-batchmode -nographics \
 	RouterPort=$PORT \
 	Port=$PORT \
