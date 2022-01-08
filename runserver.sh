@@ -2,19 +2,18 @@ chmod +x ./runserver.sh
 chmod +x './xRC Simulator.x86_64'
 nohup './xRC Simulator.x86_64' \
 	-batchmode -nographics \
-	RouterPort=11115 \
-	Port=11115 \
-	game=5 \
-	FrameRate=60 \
+	RouterPort=$PORT \
+	Port=$PORT \
+	game=$GAME \
+	FrameRate=$MAX_FRAME \
 	tmode=On \
 	register=On \
-	Spectators=2 \
-	updatetime=30 \
-	maxdata=6000 \
+	Spectators=$SPECTATORS \
+	updatetime=$UPDATE_TIME \
+	maxdata=$MAX_DATA \
 	startwhenready=On \
-	comment="My Test Server 1" \
+	comment=$COMMENT \
 	admin=IAmAdmin \
-	> log.txt &
 
 
 
